@@ -1,0 +1,24 @@
+# Digital_Clock
+public class Books {
+		
+	public static void main(String[] args) {
+		class Book{
+			String title;
+			String author;
+			int numberOfPages;
+			String ISBN;
+			Book(String Ti, String AU, int Pa, String IS) {
+				title = Ti;
+				author = AU;
+				numberOfPages = Pa;
+				ISBN = IS;
+			}
+		}
+		
+		Book a = new Book("Thinking in Java", "Bruce Eckel", 1129, "none");
+		System.out.println(a.title + " " + a.author + " " + a.numberOfPages + " " + a.ISBN);
+		
+		Book b = new Book("Thinking in Java", "Bruce Eckel", 1129, "0-13-027363-5");
+		System.out.println(b.title + " " + b.author + " " + b.numberOfPages + " " + b.ISBN);
+	}
+}
