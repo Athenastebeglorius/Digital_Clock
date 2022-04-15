@@ -1,0 +1,32 @@
+class Employees {
+	String Employees;
+	int Balances;
+	
+	Employees(String Emp, int Bal){
+		
+		Employees = Emp;
+		Balances = Bal;
+	}
+public String getInitials() {
+	String initials = "";
+	for (int i = 0;i < Employees.length();i++) {
+		char currentChar = Employees.charAt(i);
+		if (currentChar >= 'A' && currentChar <= 'Z')
+						initials = initials + currentChar + '.';
+	}
+	return initials;
+	}
+}
+public class Classinvestments {
+	
+	public static void main(String[] args) {
+		
+		Employees[] a = new Employees[3];
+		a[0] = new Employees("Athena Stebe Glorius", 265);
+		a[1] = new Employees("Daniel Conroy", 329);
+		a[2] = new Employees("Nathaniel Jones", 402);
+		
+		for(int i = 0;i < a.length; i++)
+			System.out.println("Initials: " + a[i].getInitials() + " " + "Balances: " + a[i].Balances);
+	}
+} 
